@@ -1,0 +1,14 @@
+footer{
+  background-color: rgb(36, 34, 34);
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+#footer img{
+  width:50px;
+  cursor: pointer;
+}
