@@ -18,6 +18,7 @@ import poke1_thumb from '../img/pokemon/poke1_thumb.jpg'
 import poke2_thumb from '../img/pokemon/poke2_thumb.jpg'
 import poke3_thumb from '../img/pokemon/poke3_thumb.jpg'
 
+
 import recipe1 from '../img/recipeAPI/recipe1.png'
 import recipe2 from '../img/recipeAPI/recipe2.png'
 import recipe3 from '../img/recipeAPI/recipe3.png'
@@ -33,6 +34,7 @@ import agecalc1_thumb from '../img/agecalc/agecalc1_thumb.jpg'
 import agecalc2_thumb from '../img/agecalc/agecalc2_thumb.jpg'
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
+import { Link } from 'react-router-dom'
 function Projects() {
 const todoImages = [
   {thumbnail: todo1_thumb,
@@ -66,6 +68,7 @@ const pokemonImages = [
     thumbnail: poke3_thumb,
     original: poke3
   },
+ 
   
 ]
 
@@ -111,13 +114,13 @@ const ageCalcImages = [
       </div>
       <div className="imageGallery">
         <h3>Pokemon Game</h3>
-        <ImageGallery  items={pokemonImages} showPlayButton={false}  />
+        <ImageGallery  items={pokemonImages} showPlayButton={false}   />
         <p>This one is a simple game uses the PokéAPI. It made with <span className='emphasize'>React</span>, the design made with  mostly simple CSS and a little Material UI.</p>
       </div>
       <div className="imageGallery">
         <h3>Age calculator app</h3>
         <ImageGallery  items={ageCalcImages} showPlayButton={false}  />
-        <p>This is a simple age calculator application made by <span className='emphasize'>Javascript, HTML, CSS.</span> After you've give your birth date it will calculate the exact age of you.</p>
+        <p>This is a simple age calculator application made by <span className='emphasize'>Javascript, HTML, CSS.</span> After you've give your birth date it will calculate the exact age of yours.</p>
       </div>
       <div className="imageGallery">
         <h3>Recipe Website</h3>
@@ -125,7 +128,7 @@ const ageCalcImages = [
         <p>This project is uses the MealDB API. You can search for recipes, or show them by category or area. It made with <span className='emphasize'>React</span>. For routing i used the <span className='emphasize'>react-router</span> and for the design the <span className='emphasize'>Material UI.</span> </p>
       </div>
       </div>
-
+      <p>For more information, please visit my <span className='emphasize'><Link to="https://github.com/Szilagyimarton/" target="_blank">Github</Link></span> page. </p>
     </section>
   )
 }

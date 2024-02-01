@@ -16,12 +16,17 @@ header{
   align-items: center;
   gap: 10px;
   padding: 20px;
-  z-index: 1;
-}
+ }
 .logo{
   font-family: 'Tilt Prism', sans-serif;
   padding: 5px;
   border: 1px solid black;
+}
+.logo:hover{
+ color:  rgb(178, 192, 192); ;
+  background-color: black;
+  transition:all 0.5s ease;
+
 }
 header nav a{
   padding: 10px;
@@ -31,35 +36,16 @@ header nav a{
   text-transform: uppercase;
   
 }
+nav a:hover{
+  color:  rgb(178, 192, 192); ;
+  background-color: black;
+  transition:all 0.5s ease;
+}
 .hamburger{
   display: none;
 }
 
-#home{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap-reverse;
-  gap: 10px;
-  margin-bottom: 20px;
-  padding: 20px ;
-  border-bottom: 1px solid black;
-}
-.imageContainer{
-  display: flex;
-  justify-content: center;
-  align-items: start;
 
-
-}
-#home img{
-  max-width: 300px;
- 
-}
-.introduction{
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  max-width: 800px;
-}
 .projectsContainer{
   display: flex;
   flex-wrap: wrap;
@@ -67,13 +53,18 @@ header nav a{
   gap: 50px;
   padding: 20px;
 }
-#projects h1,h3{
+#projects h1, #projects h3,#projects p{
   text-align: center;
   padding: 10px;
 }
 
 .emphasize{
   font-weight: 700;
+  text-decoration: none;
+}
+#projects a{
+  text-decoration: none;
+  color: black;
 }
 .imageGallery{
   max-width: 400px;
@@ -95,6 +86,9 @@ header nav a{
   border-bottom: 1px solid black;
   padding-bottom: 5px;
 }
+.imageGallery:hover{
+  box-shadow: 3px 3px 3px;
+}
 
 button.image-gallery-icon.image-gallery-right-nav > svg,button.image-gallery-icon.image-gallery-left-nav > svg{
   height: 60px;
@@ -105,6 +99,7 @@ button.image-gallery-icon.image-gallery-right-nav > svg,button.image-gallery-ico
   }
   .hamburger{
     display: block;
+    cursor: pointer;
   }
   .clickedMenu{
    display: flex;
@@ -113,6 +108,8 @@ button.image-gallery-icon.image-gallery-right-nav > svg,button.image-gallery-ico
   }
   .hamburgerclicked{
     display: none;
+    
   }
+ 
 
 }
