@@ -33,7 +33,7 @@ function Contact() {
       <input type="text" placeholder="Your name" name="from_name" required></input>
       <input type="email" placeholder="Your email address" name="reply_to"></input>
       <textarea type="text" placeholder="Your message" name="message" required></textarea>
-      <Button sx={{marginBottom:10}}variant='contained' color='success'>Send</Button>
+      <Button type='submit' sx={{marginBottom:10}}variant='contained' color='success'>Send</Button>
     </form>
     {successfullySent === "sent" || successfullySent === "error" ? <AlertMessage successfullySent={successfullySent} setSuccessfullySent={setSuccesfullySent}/> : ""}
    </section>

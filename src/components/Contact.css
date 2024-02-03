@@ -1,29 +1,46 @@
+
+
 #contact{
-  position: relative;
+ display: flex;
+ flex-direction: column;
+align-items: center;
 }
-h1{
-  text-align: center;
-  margin: 20px 0; 
-  text-transform: uppercase;
-}
+
 
 form{
+  width: 50%;
+  height: 100%;
+  min-height: 60vh;
+  padding: 35px 20px;
+  background: repeating-linear-gradient(#F1EDE9, #F1EDE9 31px,  #94ACD4 31px,  #94ACD4 32px);
+  font-family: 'Shadows Into Light', cursive;
+  line-height: 32px;
+  outline: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-size: 22px;
+ 
 }
 input{
-  max-width: 200px;
-  padding: 10px;
-  margin: 10px;
+  border: none;
+  font-family: 'Shadows Into Light';
+  background-color: inherit;
+  padding-bottom: 14px;
 }
-
+input:focus {
+  outline: none;
+}
 textarea{
   resize: none;
   max-width: 300px;
   height: 100px;
-  padding: 10px;
-  margin: 10px;
+   border: none;
+ font-family: 'Shadows Into Light';
+  background-color: inherit;
 
+}
+
+textarea:focus {
+  outline: none;
 }
 

@@ -19,7 +19,7 @@ import './SplashScreen.css'
         setTimeout(() => {
           setSplashScreen(false)
 
-        },delay)
+        },delay*4)
       }
     }, [currentIndex, delay, text]);
   

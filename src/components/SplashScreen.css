@@ -4,10 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:  rgb(178, 192, 192)
+ 
 }
 .textarea{
-  font-family: monospace;
+ 
   font-size: 2rem;
 
 }

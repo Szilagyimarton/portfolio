@@ -35,6 +35,8 @@ import agecalc2_thumb from '../img/agecalc/agecalc2_thumb.jpg'
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
 import { Link } from 'react-router-dom'
+
+import './Projects.css'
 function Projects() {
 const todoImages = [
   {thumbnail: todo1_thumb,
@@ -108,23 +110,23 @@ const ageCalcImages = [
       <div className="projectsContainer">
       <div className="imageGallery">
         <h3>To Do App</h3>
-        <ImageGallery items={todoImages} showPlayButton={false}  />
+        <ImageGallery items={todoImages} showPlayButton={false} showNav={false} showFullscreenButton={false} />
         <p>This project made with <span className='emphasize'>React</span>, uses <span className='emphasize'>Firebase</span> authentication, Firebase database and <span className='emphasize'>Material UI</span>.</p>
         <p>After registration and login you can add tasks, set the priority and also able to delete the existing ones.</p>
       </div>
       <div className="imageGallery">
         <h3>Pokemon Game</h3>
-        <ImageGallery  items={pokemonImages} showPlayButton={false}   />
+        <ImageGallery  items={pokemonImages} showPlayButton={false}  showNav={false} showFullscreenButton={false}/>
         <p>This one is a simple game uses the PokéAPI. It made with <span className='emphasize'>React</span>, the design made with  mostly simple CSS and a little Material UI.</p>
       </div>
       <div className="imageGallery">
         <h3>Age calculator app</h3>
-        <ImageGallery  items={ageCalcImages} showPlayButton={false}  />
+        <ImageGallery  items={ageCalcImages} showPlayButton={false} showNav={false}showFullscreenButton={false} />
         <p>This is a simple age calculator application made by <span className='emphasize'>Javascript, HTML, CSS.</span> After you've give your birth date it will calculate the exact age of yours.</p>
       </div>
       <div className="imageGallery">
         <h3>Recipe Website</h3>
-        <ImageGallery  items={recipeImages} showPlayButton={false}  />
+        <ImageGallery  items={recipeImages} showPlayButton={false} showNav={false}showFullscreenButton={false} />
         <p>This project is uses the MealDB API. You can search for recipes, or show them by category or area. It made with <span className='emphasize'>React</span>. For routing i used the <span className='emphasize'>react-router</span> and for the design the <span className='emphasize'>Material UI.</span> </p>
       </div>
       </div>

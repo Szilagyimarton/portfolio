@@ -14,7 +14,9 @@ import SplashScreen from './components/SplashScreen'
 function App() {
   const [clickedMenu,setClickedMenu] = useState(false)
   const [splashScreen,setSplashScreen] = useState(true)
-
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  const date = new Date()
+  const today = date.getDay()
   const toggleMenu = () => {
     setClickedMenu(clickedMenu => !clickedMenu)
   }
@@ -22,29 +24,25 @@ function App() {
   const closeHamburgerMenu = () => {
     clickedMenu ? toggleMenu() : null
   }
+
   return (
     <>
   <BrowserRouter>
     
      {splashScreen
      ?
-      <SplashScreen text={"Welcome to my website! Let's start! " } delay={150} setSplashScreen={setSplashScreen}/>
+      <SplashScreen text={"Welcome to my website!" } delay={150} setSplashScreen={setSplashScreen}/>
       :
-     <><header>
-            <div className='logo'>
-              <h1>MS</h1>
-            </div>
-            <nav className={clickedMenu ? "clickedMenu" : ""}>
-              <HashLink to="#home" onClick={ closeHamburgerMenu} >Home</HashLink>
-              <HashLink to="#projects" onClick={closeHamburgerMenu}>Projects</HashLink>
-              <HashLink to="#about" onClick={closeHamburgerMenu}>About</HashLink>
-              <HashLink to="#contact" onClick={closeHamburgerMenu}>Contact</HashLink>
-             
+     <><header >
+            <nav className="navMenu" >
+              <HashLink to="#home" onClick={ closeHamburgerMenu} smooth >Home</HashLink>
+              <HashLink to="#projects" onClick={closeHamburgerMenu} smooth>Projects</HashLink>
+              <HashLink to="#about" onClick={closeHamburgerMenu} smooth>About</HashLink>
+              <HashLink to="#contact" onClick={closeHamburgerMenu} smooth>Contact</HashLink>
             </nav>
-            <div className={`hamburger${clickedMenu ?"clicked" : ""}`}>
-              <span className="material-symbols-outlined" onClick={toggleMenu}>menu</span>
-            </div>
-          </header><Home /><Projects /><About /><Contact /> <Footer/></>
+          <h2>{days[today]}</h2>
+          </header>
+          <Home/><Projects /><About /><Contact /> <Footer/></>
      
         }
 
