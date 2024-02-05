@@ -15,3 +15,9 @@
 .imageGallery h3{
   font-size: 2vw;
 }
+.linkToGit a{
+  text-decoration: underline;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+}

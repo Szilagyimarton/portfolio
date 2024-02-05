@@ -1,24 +1,24 @@
-
-
 #contact{
  display: flex;
  flex-direction: column;
 align-items: center;
+position: relative;
+
 }
 
 
 form{
   width: 50%;
-  height: 100%;
-  min-height: 60vh;
+  max-height: 300px;
   padding: 35px 20px;
-  background: repeating-linear-gradient(#F1EDE9, #F1EDE9 31px,  #94ACD4 31px,  #94ACD4 32px);
+  background: repeating-linear-gradient(#f1ec4c, #ECE63D 31px,  #000000 31px,  #000000 32px);
   font-family: 'Shadows Into Light', cursive;
   line-height: 32px;
   outline: 0;
   display: flex;
   flex-direction: column;
   font-size: 22px;
+  margin-bottom: 10vh;
  
 }
 input{
@@ -34,13 +34,17 @@ textarea{
   resize: none;
   max-width: 300px;
   height: 100px;
-   border: none;
+  border: none;
  font-family: 'Shadows Into Light';
   background-color: inherit;
-
 }
 
 textarea:focus {
   outline: none;
 }
 
+#contact > form > button{
+ margin-top: 200px;
+ border-radius: 0;
+ 
+}

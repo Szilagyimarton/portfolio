@@ -14,7 +14,7 @@ function Home() {
             <img src="src\img\DSCF7997.jpeg" alt="pictureofme"/>
           </div>
                 <ul>
-                  <p><h3>The technologies</h3> which I'm  already familiar with:</p>
+                  <h3>The technologies</h3><p> which I'm  already familiar with:</p>
                   <li><CodeIcon/> HTML</li>
                   <li><CodeIcon/> CSS</li>
                   <li><CodeIcon/> Javascript</li>

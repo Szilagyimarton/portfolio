@@ -2,7 +2,9 @@ import emailjs from 'emailjs-com';
 import "./Contact.css"
 import { useState } from 'react';
 import AlertMessage from './AlertMessage';
-import { Button } from '@mui/material';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import { green } from '@mui/material/colors';
+import { Button, IconButton } from '@mui/material';
 
 
 
@@ -33,7 +35,9 @@ function Contact() {
       <input type="text" placeholder="Your name" name="from_name" required></input>
       <input type="email" placeholder="Your email address" name="reply_to"></input>
       <textarea type="text" placeholder="Your message" name="message" required></textarea>
-      <Button type='submit' sx={{marginBottom:10}}variant='contained' color='success'>Send</Button>
+     <IconButton type='submit'  color="success">
+      <EmailOutlinedIcon fontSize="large"/>
+     </IconButton>
     </form>
     {successfullySent === "sent" || successfullySent === "error" ? <AlertMessage successfullySent={successfullySent} setSuccessfullySent={setSuccesfullySent}/> : ""}
    </section>

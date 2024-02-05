@@ -130,7 +130,7 @@ const ageCalcImages = [
         <p>This project is uses the MealDB API. You can search for recipes, or show them by category or area. It made with <span className='emphasize'>React</span>. For routing i used the <span className='emphasize'>react-router</span> and for the design the <span className='emphasize'>Material UI.</span> </p>
       </div>
       </div>
-      <p>For more information, please visit my <span className='emphasize'><Link to="https://github.com/Szilagyimarton/" target="_blank">Github</Link></span> page. </p>
+      <p>For more information, please visit my <span className='linkToGit'><Link to="https://github.com/Szilagyimarton/" target="_blank">Github</Link></span> page. </p>
     </section>
   )
 }
