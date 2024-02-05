@@ -1,4 +1,3 @@
-
 import './App.css'
 import Home from './components/Home'
 import Projects from './components/Projects'
@@ -15,8 +14,12 @@ function App() {
   const [clickedMenu,setClickedMenu] = useState(false)
   const [splashScreen,setSplashScreen] = useState(true)
   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  const months = ["January", "February","March","April","May","June","July", "August","September","October","November","December"]
   const date = new Date()
   const today = date.getDay()
+  const month = date.getMonth() 
+  const day = date.getDate()
+  const todayDate =  months[month] +" "+day
   const toggleMenu = () => {
     setClickedMenu(clickedMenu => !clickedMenu)
   }
@@ -40,7 +43,10 @@ function App() {
               <HashLink to="#about" onClick={closeHamburgerMenu} smooth>About</HashLink>
               <HashLink to="#contact" onClick={closeHamburgerMenu} smooth>Contact</HashLink>
             </nav>
-          <h2>{days[today]}</h2>
+          <div className='date'>
+            <p>{days[today]}</p>
+            <p>{todayDate}</p>
+          </div>
           </header>
           <Home/><Projects /><About /><Contact /> <Footer/></>
      

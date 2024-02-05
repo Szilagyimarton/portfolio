@@ -11,16 +11,18 @@
 html{
   background-color: #F5F2E8;
   font-family:"OldNewsPaper", sans-serif;
-  padding: 5px;
+  
 }
 
+
 header {
+  animation: fade 2s linear;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: 3px solid black;
-  margin: 10px;
+  margin: 10px 10px 0 10px;
   }
 header nav{
     border-bottom: 3px solid black ;
@@ -30,22 +32,34 @@ header nav{
     gap: 2vw;
 
 }
+.date{
+  display: flex;
+  gap: 3vw;
+  align-items: center;
+}
+.date p{
+
+  letter-spacing: 2px;
+}
 
 header a{
   color: black;
   text-decoration: none;
-
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 4vw;
-  text-shadow: -3px 4px;
+  text-shadow: -0.3vw 0.2vw;
 }
 
 
 
-
-@media only screen and (max-width: 500px) {
-
-
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
 }
 
