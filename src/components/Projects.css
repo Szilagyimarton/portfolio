@@ -20,6 +20,9 @@
   column-count: 3;
   column-rule: solid;
 }
+.project img{
+  cursor: pointer;
+}
 
 .linkToGit a{
   text-decoration: underline;
