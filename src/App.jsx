@@ -34,7 +34,7 @@ function App() {
     
      {splashScreen
      ?
-      <SplashScreen text={"Welcome to my website!" } delay={150} setSplashScreen={setSplashScreen}/>
+      <SplashScreen text={"Welcome to my website!" } delay={200} setSplashScreen={setSplashScreen}/>
       :
      <><header >
             <nav className="navMenu" >

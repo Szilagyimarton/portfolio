@@ -10,73 +10,22 @@ position: relative;
   margin-bottom: 10px;
 
 }
-
-
-form{
-  width: 50%;
-  max-height: 300px;
-  padding: 35px 20px;
-  background: repeating-linear-gradient(#f1ec4c, #ECE63D 31px,  #000000 31px,  #000000 32px);
-  font-family: 'Shadows Into Light', cursive;
-  line-height: 32px;
-  outline: 0;
-  display: flex;
-  flex-direction: column;
-  font-size: 22px;
-  margin-bottom: 10vh;
- 
-}
-input{
-  border: none;
-  font-family: 'Shadows Into Light';
-  background-color: inherit;
-  padding-bottom: 14px;
-}
-input[type="email"]{
-  padding-bottom: 10px;
-}
-input:focus {
-  outline: none;
-}
-
-textarea{
-  resize: none;
-  max-width: 300px;
-  height: 100px;
-  border: none;
-  font-family: 'Shadows Into Light';
-  background-color: inherit;
-  padding-bottom: 14px;
-  line-height: 32px;
-
-}
-
-textarea:focus {
-  outline: none;
-}
-
-button{
- position: absolute;
-  text-transform: uppercase;
-  background-color: inherit;
-  border: none;
-  cursor: pointer;
-  font-size: 22px;
-  font-weight: 800;
-  bottom: -10px;
-  right: 50%;
-  transform: translateX(50%);
-  border-radius: 10px;
-  padding: 10px;
-  border: 2px solid black;
-
- 
-}
-button:hover{
- color: #f1ec4c;
- border: 1px solid #f1ec4c;
- background-color: #000000;
- border-radius: 10px;
- padding: 10px;
+a{
+  color: green;
   
+}
+#contact > div > a > svg{
+  font-size: 45px;
+  animation: bounce 2s infinite ease;
+}
+
+
+@keyframes bounce {
+  40% { transform:translateY(0%); }
+  60% { transform:translateY(-15%); }
+  80% { transform:translateY(0%); }
+  95% { transform:translateY(-7%); }
+  97% { transform:translateY(0%); }
+  99% { transform:translateY(-3%); }
+  100% { transform:translateY(0); }
 }

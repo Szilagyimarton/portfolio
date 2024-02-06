@@ -11,8 +11,8 @@
   margin: 20px 0; 
 
 }
-#projects h3{
-  margin-bottom: 10px;
+.project h3{
+  margin: 10px 0;
 }
 .projectsContainer{
 
@@ -31,8 +31,12 @@
   cursor: pointer;
  
 }
-#projects p{
+.project p{
   margin: 10px 0;
   font-weight: 600;
 
 }
+ .gitInfo{
+  text-align: center;
+  margin-top: 10px;
+ }

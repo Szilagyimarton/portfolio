@@ -10,25 +10,27 @@ function Projects() {
       <div className="project">
         <h3>To Do App</h3>
         <Link to="https://github.com/Szilagyimarton/todo-app/tree/main" target="_blank">
-          <img src='src\img\todoapp\todo4.png' alt='todoImg' />
+          <img src='src\img\todoapp\todo1.png' alt='todoImg' />
         </Link>
-        <p>This project made with <span className='emphasize'>React</span>, uses <span className='emphasize'>Firebase</span> authentication, Firebase database and <span className='emphasize'>Material UI</span>.</p>
+        <p>This project made with React, uses Firebase authentication, Firebase database and Material UI.</p>
         <p>After registration and login you can add tasks, set the priority and also able to delete the existing ones.</p>
       </div>
       <div className="project">
-        <h3>Pokemon Game</h3>
-        <img src='src\img\pokemon\poke1.png' alt='pokemonImg' />
-        <p>This one is a simple game uses the PokéAPI. It made with <span className='emphasize'>React</span>, the design made with  mostly simple CSS and a little Material UI.</p>
+        <h3>Weather App</h3>
+        <Link to="https://github.com/Szilagyimarton/weather_api" target='_blank'>
+        <img src='src\img\weather\weather.png' alt='weatherImg' />
+        </Link>
+        <p>This one is made with HTML, Javascript and CSS. It uses a Weather API, displays the next 7 day's weather. You can change between Celsius and Fahrenheit.</p>
       </div>
       <div className="project">
         <h3>Recipe Website</h3>
         <Link to="https://github.com/Szilagyimarton/react-recipe-app" target='_blank'>
-        <img src='src\img\recipeAPI\recipe4.png' alt='recipeAppImg' />
+        <img src='src\img\recipeAPI\recipe2.png' alt='recipeAppImg' />
         </Link>
-        <p>This project is uses the MealDB API. You can search for recipes, or show them by category or area. It made with <span className='emphasize'>React</span>. For routing i used the <span className='emphasize'>react-router</span> and for the design the <span className='emphasize'>Material UI.</span> </p>
+        <p>This project is uses the MealDB API. You can search for recipes, or show them by category or area. It made with React. For routing i used the react-router and for the design the Material UI. </p>
       </div>
       </div>
-      <p>For more information, please visit my <span className='linkToGit'><Link to="https://github.com/Szilagyimarton/" target="_blank">Github</Link></span> page. </p>
+      <p className='gitInfo'>For more information, please visit my <span className='linkToGit'><Link to="https://github.com/Szilagyimarton/" target="_blank">Github</Link></span> page. </p>
     </section>
   )
 }
