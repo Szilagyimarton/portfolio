@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: OldNewsPaper;
-  src: url("C:\Users\Marton\Documents\web development\projects\portfolio\src\font\OldNewspaperTypes.ttf");
+  src: url("./font/OldNewspaperTypes.ttf");
 }
 html{
   background-color: #F5F2E8;
@@ -36,20 +36,32 @@ header nav{
   display: flex;
   gap: 3vw;
   align-items: center;
+  
 }
 .date p{
-
+  
   letter-spacing: 2px;
 }
 
 header a{
+  
   color: black;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 4vw;
+  font-size: 3.5vw;
   text-shadow: -0.3vw 0.2vw;
+  padding: 10px;
 }
+
+
+
+ header a:hover{
+border: 2px solid black;
+box-shadow: 2px 2px;
+padding: 5px;
+} 
+
 
 
 
@@ -63,3 +75,27 @@ header a{
   
 }
 
+@media only screen and (max-width: 450px)  {
+  header a{
+    font-size: 0.5rem;
+    text-shadow: -0.1vw 0.1vw;
+    padding: 5px;
+  }
+  header a:hover{
+    padding: 5px 5px 0 5px;
+    border: 1px solid black;
+    box-shadow: 1px 1px;
+  }
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(3vh);
+    visibility: hidden;
+    transition: opacity 1s ease, transform 1s ease;
+  
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+}

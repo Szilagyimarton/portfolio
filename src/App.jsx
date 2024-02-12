@@ -8,11 +8,15 @@ import Contact from './components/Contact'
 import { useState } from 'react'
 import Footer from './components/Footer'
 import SplashScreen from './components/SplashScreen'
+import FadeInSection from './components/FadeInSection'
 
 
 function App() {
   const [clickedMenu,setClickedMenu] = useState(false)
   const [splashScreen,setSplashScreen] = useState(true)
+
+  
+
   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
   const months = ["January", "February","March","April","May","June","July", "August","September","October","November","December"]
   const date = new Date()
@@ -41,14 +45,25 @@ function App() {
               <HashLink to="#home" onClick={ closeHamburgerMenu} smooth >Home</HashLink>
               <HashLink to="#projects" onClick={closeHamburgerMenu} smooth>Projects</HashLink>
               <HashLink to="#about" onClick={closeHamburgerMenu} smooth>About</HashLink>
-              <HashLink to="#contact" onClick={closeHamburgerMenu} smooth>Contact</HashLink>
+              <HashLink to="#contact" onClick={closeHamburgerMenu} smooth >Contact</HashLink>
             </nav>
           <div className='date'>
             <p>{days[today]}</p>
             <p>{todayDate}</p>
           </div>
           </header>
-          <Home/><Projects /><About /><Contact /> <Footer/></>
+          <FadeInSection>
+            <Home/>
+          </FadeInSection>
+           <Projects />
+           <FadeInSection>
+            <About />
+          </FadeInSection>
+          <FadeInSection>
+            <Contact />
+          </FadeInSection>  
+           <Footer/>
+          </>
      
         }
 

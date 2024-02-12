@@ -13,15 +13,37 @@
 }
 .project h3{
   margin: 10px 0;
+  text-align: center;
 }
 .projectsContainer{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content:space-evenly;
+gap: 10px;
 
-  padding: 5px;
-  column-count: 3;
-  column-rule: solid;
+}
+.project{
+  max-width: 350px;
+ border: 1px solid black;
+ box-shadow: 1px 1px;
+ padding: 10px;
+ 
+}
+.project:hover{
+  box-shadow: 3px 3px;
+}
+.project a:hover{
+ color: gray;
+}
+.project a {
+  text-decoration: none;
+  color: black;
+  
 }
 .project img{
   cursor: pointer;
+  width: 100%;
 }
 
 .linkToGit a{
@@ -40,3 +62,10 @@
   text-align: center;
   margin-top: 10px;
  }
+
+
+
+.modal img{
+  width: 100%;
+ height: auto;
+}
