@@ -31,9 +31,18 @@ const handleFullscreen = (event) => {
             <Link to="https://github.com/Szilagyimarton/todo-app/tree/main" target="_blank">
               <h3>To Do App</h3>
             </Link>
-            <img src='\img\todo5.png' alt="todoImage" onClick={(event) => handleFullscreen(event)} />
+            <img src='\img\todo5.png' alt="todoImg" onClick={(event) => handleFullscreen(event)} />
             <p>This project made with React, uses Firebase authentication, Firebase database and Material UI.</p>
             <p>After registration and login you can add tasks, set the priority and also able to delete the existing ones.</p>
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="project">
+            <Link to="https://github.com/Szilagyimarton/calculator" target="_blank">
+              <h3>Calculator</h3>
+            </Link>
+            <img src='\img\calcImg.png' alt="calculatorImage" onClick={(event) => handleFullscreen(event)} />
+            <p>This is a simple calculator, made with React.</p>
           </div>
         </FadeInSection>
         <FadeInSection>
