@@ -28,6 +28,15 @@ const handleFullscreen = (event) => {
         <Modal image={imageName} handleFullscreen={handleFullscreen} open={open}/>
         <FadeInSection>
           <div className="project">
+            <Link to="https://hangmandev.web.app/" target="_blank">
+              <h3>Hangman Game</h3>
+            </Link>
+            <img src='\img\hangman.png' alt="hangmanImg" onClick={(event) => handleFullscreen(event)} />
+            <p>Let's play some Hangman! Click on the title to begin the game!</p>
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="project">
             <Link to="https://github.com/Szilagyimarton/todo-app/tree/main" target="_blank">
               <h3>To Do App</h3>
             </Link>
@@ -38,7 +47,7 @@ const handleFullscreen = (event) => {
         </FadeInSection>
         <FadeInSection>
           <div className="project">
-            <Link to="https://github.com/Szilagyimarton/calculator" target="_blank">
+            <Link to="https://calculator-9167f.web.app" target="_blank">
               <h3>Calculator</h3>
             </Link>
             <img src='\img\calcImg.png' alt="calculatorImage" onClick={(event) => handleFullscreen(event)} />
@@ -47,7 +56,7 @@ const handleFullscreen = (event) => {
         </FadeInSection>
         <FadeInSection>
           <div className="project">
-            <Link to="https://github.com/Szilagyimarton/react-recipe-app" target='_blank'>
+            <Link to="https://react-recipe-74406.web.app" target='_blank'>
             <h3>Recipe Website</h3>
             </Link>
               <img src="\img\recipe1.png" alt='recipeAppImg' onClick={(event) => handleFullscreen(event)} />
@@ -56,7 +65,7 @@ const handleFullscreen = (event) => {
         </FadeInSection>
         <FadeInSection>
           <div className="project">
-            <Link to="https://github.com/Szilagyimarton/weather_api" target='_blank'>
+            <Link to="https://szilagyimarton.github.io/weather_api" target='_blank'>
             <h3>Weather App</h3>
             </Link>
               <img src='\img\weatherApp.png' alt='weatherImg' onClick={(event) => handleFullscreen(event)}/>
