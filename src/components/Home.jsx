@@ -18,8 +18,11 @@ function Home() {
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>Javascript</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
                   <li>React</li>
-                  <li>Express.js</li>
+                  <li>Laravel</li>
+                  <li>Node.js</li>
                   <li>Bootstrap</li>
                   <li>Material UI</li>
                 </ul> 

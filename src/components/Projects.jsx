@@ -24,7 +24,9 @@ const handleFullscreen = (event) => {
   <>
 
     <section id='projects'>
-      <h1>Projects</h1><div className="projectsContainer">
+      <h1>Projects</h1>
+        <p className='projectInfo'>Please click on the title to view a project!</p>
+      <div className="projectsContainer">
         <Modal image={imageName} handleFullscreen={handleFullscreen} open={open}/>
         <FadeInSection>
           <div className="project">
@@ -37,6 +39,34 @@ const handleFullscreen = (event) => {
         </FadeInSection>
         <FadeInSection>
           <div className="project">
+            <Link to="https://calculator-9167f.web.app" target="_blank">
+              <h3>Calculator</h3>
+            </Link>
+            <img src='\img\calcImg.png' alt="calculatorImage" onClick={(event) => handleFullscreen(event)} />
+            <p>This is a simple calculator, made with React.</p>
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="project">
+            <Link to="https://webshop-demo1.web.app/" target="_blank">
+              <h3>Webshop Demo</h3>
+            </Link>
+            <img src='\img\webshop.png' alt="webshopImg" onClick={(event) => handleFullscreen(event)} />
+            <p>It's an imaginary webshop uses FakeStore API for the products.</p>
+            </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="project">
+            <Link to="https://github.com/Szilagyimarton/laravel-crud" target="_blank">
+              <h3>Book database</h3>
+            </Link>
+            <img src='\img\crud.png' alt="crudImg" onClick={(event) => handleFullscreen(event)} />
+            <p>This is a basic CRUD project, made with Laravel.</p>
+            <p>After registration and login you can add/edit/delete your books of the database.  </p>
+            </div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="project">
             <Link to="https://github.com/Szilagyimarton/todo-app/tree/main" target="_blank">
               <h3>To Do App</h3>
             </Link>
@@ -45,15 +75,7 @@ const handleFullscreen = (event) => {
             <p>After registration and login you can add tasks, set the priority and also able to delete the existing ones.</p>
           </div>
         </FadeInSection>
-        <FadeInSection>
-          <div className="project">
-            <Link to="https://calculator-9167f.web.app" target="_blank">
-              <h3>Calculator</h3>
-            </Link>
-            <img src='\img\calcImg.png' alt="calculatorImage" onClick={(event) => handleFullscreen(event)} />
-            <p>This is a simple calculator, made with React.</p>
-          </div>
-        </FadeInSection>
+       
         <FadeInSection>
           <div className="project">
             <Link to="https://react-recipe-74406.web.app" target='_blank'>

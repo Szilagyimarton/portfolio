@@ -32,7 +32,7 @@
   line-height: 4vh;
   padding-bottom: 10px;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 #home h2{
   font-weight: 800;
@@ -80,12 +80,12 @@ li{
   font-size: 3rem;
  }
   .introduction p{
-   font-size: 2rem;
+   font-size: 1.5rem;
     padding-bottom: 10px;
     font-weight: 600;
   }
   .introduction li{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
